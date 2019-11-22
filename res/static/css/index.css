@@ -358,14 +358,6 @@ body {
     border-radius: 3px;
 }
 
-.tlinks {
-    text-indent: -9999px;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    overflow: hidden;
-}
-
 
 /** 动态 */
 .banner.news {
