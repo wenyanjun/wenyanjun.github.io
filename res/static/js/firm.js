@@ -1,10 +1,3 @@
-/**
- 
- @Name: layuiNetCompany - 大气风格的网络公司企业模版
- @Author: xuxingyu
- @Copyright: layui.com
- 
- */
 
 layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   var $ = layui.jquery
@@ -31,7 +24,7 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
     $('.banner').children('.title').addClass('active');
   })
 
-  //导航切换
+  // 导航切换
   var btn = $('.nav').find('.nav-list').children('button')
   ,spa = btn.children('span')
   ,ul = $('.nav').find('.nav-list').children('.layui-nav');
@@ -70,7 +63,7 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   laypage.render({
     elem: 'casePage'
     ,count: 50
-    ,theme: '#2db5a3' 
+    ,theme: '#2db5a3'
     ,layout: ['page', 'next']
   });
 
@@ -84,7 +77,7 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
       }else{
         span.html(span.html().substring(0, 42)+ '...')
       };
-      $(window).resize(function(){   
+      $(window).resize(function(){
         if(document.body.clientWidth > 463){
           span.html(spanTxt);
         }else{
@@ -92,7 +85,7 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
         };
       });
     });
-  });  
+  });
 
-  exports('firm', {}); 
+  exports('firm', {});
 });
